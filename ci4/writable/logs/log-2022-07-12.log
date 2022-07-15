@@ -1,0 +1,112 @@
+CRITICAL - 2022-07-12 08:37:14 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\Users\Muhammad Bisma Putra\Documents\UAS\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\Users\Muhammad Bisma Putra\Documents\UAS\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\Users\Muhammad Bisma Putra\Documents\UAS\UAS_Pemrograman-master\ci4\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\Users\Muhammad Bisma Putra\Documents\UAS\UAS_Pemrograman-master\ci4\spark(45): require('C:\\Users\\Muhamm...')
+#4 {main}
+CRITICAL - 2022-07-12 08:40:19 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\spark(45): require('C:\\XAMAPP\\htdoc...')
+#4 {main}
+CRITICAL - 2022-07-12 08:51:21 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\spark(45): require('C:\\XAMAPP\\htdoc...')
+#4 {main}
+CRITICAL - 2022-07-12 09:06:13 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\spark(45): require('C:\\XAMAPP\\htdoc...')
+#4 {main}
+ERROR - 2022-07-12 02:08:54 --> Error connecting to the database: Unknown database 'uas'
+CRITICAL - 2022-07-12 02:08:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'uas'
+#0 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#3 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#4 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\app\Models\DaftarModel.php(16): CodeIgniter\BaseModel->paginate(10, 'warga')
+#5 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\app\Controllers\Home.php(35): App\Models\DaftarModel->getDaftar()
+#6 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#7 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\XAMAPP\\htdoc...')
+#11 {main}
+ERROR - 2022-07-12 02:08:59 --> Error connecting to the database: Unknown database 'uas'
+CRITICAL - 2022-07-12 02:08:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'uas'
+#0 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\app\Models\KasModel.php(18): CodeIgniter\Model->__call('get', Array)
+#4 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\app\Controllers\Daftar.php(34): App\Models\KasModel->getAll()
+#5 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(832): App\Controllers\Daftar->index()
+#6 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\XAMAPP\\htdoc...')
+#10 {main}
+ERROR - 2022-07-12 02:15:29 --> Error connecting to the database: Unknown database 'uas'
+CRITICAL - 2022-07-12 02:15:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'uas'
+#0 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#3 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#4 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\app\Models\DaftarModel.php(16): CodeIgniter\BaseModel->paginate(10, 'warga')
+#5 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\app\Controllers\Home.php(35): App\Models\DaftarModel->getDaftar()
+#6 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#7 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\XAMAPP\\htdoc...')
+#11 {main}
+ERROR - 2022-07-12 02:16:12 --> Error connecting to the database: Unknown database 'kas'
+CRITICAL - 2022-07-12 02:16:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'kas'
+#0 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseBuilder.php(1539): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#3 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+#4 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\app\Models\DaftarModel.php(16): CodeIgniter\BaseModel->paginate(10, 'warga')
+#5 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\app\Controllers\Home.php(35): App\Models\DaftarModel->getDaftar()
+#6 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#7 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\XAMAPP\\htdoc...')
+#11 {main}
+ERROR - 2022-07-12 02:16:31 --> Error connecting to the database: Unknown database 'kas'
+CRITICAL - 2022-07-12 02:16:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'kas'
+#0 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\app\Models\KasModel.php(18): CodeIgniter\Model->__call('get', Array)
+#4 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\app\Controllers\Daftar.php(34): App\Models\KasModel->getAll()
+#5 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(832): App\Controllers\Daftar->index()
+#6 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftar))
+#7 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\XAMAPP\\htdoc...')
+#10 {main}
+ERROR - 2022-07-12 03:28:37 --> Cannot delete or update a parent row: a foreign key constraint fails (`kas_rt`.`iuran`, CONSTRAINT `iuran_ibfk_1` FOREIGN KEY (`warga_id`) REFERENCES `warga` (`id`))
+CRITICAL - 2022-07-12 03:28:37 --> Cannot delete or update a parent row: a foreign key constraint fails (`kas_rt`.`iuran`, CONSTRAINT `iuran_ibfk_1` FOREIGN KEY (`warga_id`) REFERENCES `warga` (`id`))
+#0 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `wa...', 0)
+#1 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `wa...')
+#2 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `wa...')
+#3 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Database\BaseBuilder.php(2225): CodeIgniter\Database\BaseConnection->query('DELETE FROM `wa...', Array, false)
+#4 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\app\Controllers\Home.php(209): CodeIgniter\BaseModel->delete(Array)
+#7 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(832): App\Controllers\Home->delete('2')
+#8 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\XAMAPP\htdocs\UAS_Pemrograman-master\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\XAMAPP\\htdoc...')
+#12 {main}
